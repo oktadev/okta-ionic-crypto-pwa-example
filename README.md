@@ -1,8 +1,8 @@
-# Ionic App with Okta Authentication
+# cryptoPWA with Okta Authentication
 
-This example shows how to create an Ionic application that uses Cordova's in-app browser to log in with Okta.
+This example shows to create an cryptocurrency application in Ionic that uses Okta for authentication. The cryptoPWA app used in this example was originally by [Josh Morony](https://twitter.com/joshuamorony) in [Building a Cryptocurrency Price Tracker PWA in Ionic](https://www.joshmorony.com/building-a-cryptocurrency-price-tracker-pwa-in-ionic/).
 
-Please read [Build an Ionic App with User Authentication](https://developer.okta.com/blog/2017/08/22/build-an-ionic-app-with-user-authentication) to see how this application was created.
+Please read [Protect your Cryptocurrency Wealth Tracking PWA with Okta]() to see how this application was created.
 
 **Prerequisites:** [Node.js](https://nodejs.org/).
 
@@ -18,8 +18,8 @@ Please read [Build an Ionic App with User Authentication](https://developer.okta
 To install this example application, run the following commands:
 
 ```bash
-git clone git@github.com:oktadeveloper/okta-ionic-auth-example.git
-cd okta-ionic-auth-example
+git clone git@github.com:oktadeveloper/okta-ionic-crypto-pwa.git
+cd okta-ionic-crypto-pwa
 ```
 
 This will get a copy of the project installed locally. Then run the following command to install Ionic and Cordova.
@@ -40,7 +40,7 @@ To integrate Okta's Identity Platform for user authentication, you'll first need
 * [Register](https://www.okta.com/developer/signup/) and create an OIDC application
 * Log in to your Okta account and navigate to **Applications > Add Application** 
 * Select **SPA** and click **Next**
-* Give your application a name (e.g. "Ionic OIDC")
+* Give your application a name (e.g. "Crypto PWA")
 * Change the **Base URI** and **Login redirect URI** to `http://localhost:8100` and click **Done**. 
 
 After performing these steps, copy the `clientId` into `src/pages/login/login.ts` and change `{yourOktaDomain}` to match your account's id.
@@ -72,7 +72,7 @@ It also uses the following library provided by [Manfred Steyer](https://github.c
 
 ## Help
 
-Please post any questions as comments on the [blog post](https://developer.okta.com/blog/2017/08/22/build-an-ionic-app-with-user-authentication), or visit our [Okta Developer Forums](https://devforum.okta.com/). You can also email developers@okta.com if would like to create a support ticket.
+Please post any questions as comments on the [blog post](), or visit our [Okta Developer Forums](https://devforum.okta.com/). You can also email developers@okta.com if would like to create a support ticket.
 
 ## License
 
