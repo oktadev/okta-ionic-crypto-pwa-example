@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, App } from 'ionic-angular';
+import { IonicPage, App } from 'ionic-angular';
 import { JwksValidationHandler, OAuthService } from 'angular-oauth2-oidc';
 
 @IonicPage({

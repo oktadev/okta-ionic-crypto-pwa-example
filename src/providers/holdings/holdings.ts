@@ -1,11 +1,10 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { Observable } from 'rxjs/Observable';
 import { forkJoin } from 'rxjs/observable/forkJoin';
 import { timeoutWith } from 'rxjs/operators';
 import 'rxjs/add/observable/throw';
-import { OAuthService } from 'angular-oauth2-oidc';
 
 interface Holding {
   crypto: string,
@@ -20,7 +19,7 @@ export class HoldingsProvider {
   public holdings: Holding[] = [];
   public pricesUnavailable: boolean = false;
 
-  constructor(private http: HttpClient, private storage: Storage, private oauthService: OAuthService) {
+  constructor(private http: HttpClient, private storage: Storage) {
   }
 
   addHolding(holding: Holding): void {
@@ -47,10 +46,6 @@ export class HoldingsProvider {
         this.fetchPrices();
       }
     });
-
-    this.http.get('http://localhost:8080/hello-oauth',
-      {headers: new HttpHeaders().set('Authorization', this.oauthService.authorizationHeader()), responseType: 'text'}
-    ).subscribe(data => console.log('response: ', data));
   }
 
   verifyHolding(holding): Observable<any> {
