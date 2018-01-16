@@ -21,7 +21,7 @@ import { OAuthModule } from 'angular-oauth2-oidc';
     }),
     IonicStorageModule.forRoot(),
     HttpClientModule,
-    OAuthModule.forRoot(),
+    OAuthModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -34,5 +34,4 @@ import { OAuthModule } from 'angular-oauth2-oidc';
     HoldingsProvider
   ]
 })
-export class AppModule {
-}
+export class AppModule {}
