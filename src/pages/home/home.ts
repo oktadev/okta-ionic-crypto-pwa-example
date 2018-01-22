@@ -40,4 +40,8 @@ export class HomePage {
     }
     return claims.name;
   }
+
+  logout() {
+    this.oauthService.logOut();
+  }
 }
