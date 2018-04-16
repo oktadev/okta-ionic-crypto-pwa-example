@@ -18,7 +18,7 @@ Please read [Protect your Cryptocurrency Wealth Tracking PWA with Okta](https://
 To install this example application, run the following commands:
 
 ```bash
-git clone git@github.com:oktadeveloper/okta-ionic-crypto-pwa.git
+git clone https://github.com/oktadeveloper/okta-ionic-crypto-pwa-example.git
 cd okta-ionic-crypto-pwa
 ```
 
